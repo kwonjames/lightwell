@@ -1,0 +1,458 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+
+/* ------HEADER + NAV------ */
+
+
+header {
+  background-color: #fff;
+  padding-bottom: 0px;
+  width:100%;
+  border-bottom: 0.5px solid #c8c3c3;
+  display: inline-block;
+}
+
+.home-logo {
+  display: inline-block;
+  background-image:url('./elements/lightwell-logo.svg');
+  background-repeat: no-repeat;
+  height: 140px;
+  width: 240px;
+  margin: 0;
+  margin-left: 250px;
+}
+
+
+.nav-container{
+  float: right;
+  z-index: 2;
+}
+
+.nav-bar {
+  font-family: "Verdana";
+  display: inline-block;
+  font-size: 14px;
+  list-style: none;
+  margin-top: 50px;
+  margin-right: 280px;
+  float: right;
+}
+
+.nav-bar li {
+  display: inline-block;
+  margin-left: 30px;
+
+}
+
+.nav-bar li a {
+  color: #404040;
+  display: block;
+}
+
+/* ---- Drop Down ---- */
+
+.nav-container ul li ul li{
+  display: none;
+  background-color: #4d4d4d;
+  width: 100px;
+  height: 30px;
+
+}
+
+/*.nav-container ul li:hover ul li{
+  display: inline;
+
+} */
+
+
+/* -------- TOP IMAGE BANNER --------*/
+
+.top-banner{
+  background-image:url('./elements/flavin.jpg');
+  width: 80%;
+  height: calc(70vh - 75px);
+  display: table;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 60px auto;
+}
+
+/* ----- MAIN IMAGE BANNER TEXT control ------*/
+
+
+.banner-text {
+  display: inline-block;
+  width: fit-content;
+  margin: 50px 0 0 150px;
+  font-family: "Georgia";
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.banner-dsc {
+  font-size: 18px;
+  font-family: "Verdana";
+  color: #1b1b1b;
+  margin: 20px 180px;
+  font-style: italic;
+}
+
+.banner-cta a{
+  font-size: 18px;
+  color: #1b1b1b;
+  float: right;
+  font-family: Verdana;
+  margin-top: 310px;
+  margin-right: 180px;
+}
+
+.banner-cta a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* -------PRODUCT GALLERY------ */
+
+/*.featured-box-1 {
+  background-image: url('./elements/lamp2.jpg');
+  width: 30%;
+  height: calc(40vh - 25px);
+  display: table;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 left;
+}
+*/
+
+.featured-container {
+  display: grid;
+  margin: 0 auto;
+  width: 68%;
+  grid-template-areas: "featured-box-1 featured-box-2 featured-box-3"
+                       "f-text-1 f-text-2 f-text-3"
+                       ;
+  grid-template-columns: 3, 1fr;
+  grid-template-rows: 300px;
+  grid-gap: 90px;
+}
+
+.featured-box-1 {
+  background-image: url('./elements/lamp2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;
+}
+
+.featured-box-2 {
+  background-image: url('./elements/lamp1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:#114935;
+}
+.featured-box-3{
+  background-image: url('./elements/lamp4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #345966;
+}
+
+
+
+/* ----- INSIDE Text Box Control -----*/
+
+.featured-text-inside{
+  width: fit-content;
+  margin: 15px 0 0 10px;
+  font-family: Georgia;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.dsc-text-inside {
+  margin-top: 220px;
+  margin-left: 20px;
+  font-family: Verdana;
+  font-style: italic;
+  font-size: 12px;
+  color: #1b1b1b;
+}
+
+.ft-cta a {
+  display: inline-block;
+  color: #1b1b1b;
+  font-size: 14px;
+  font-family: Verdana;
+  float: right;
+  margin-right: 20px;
+}
+
+.ft-cta a:hover {
+  text-decoration: underline;
+}
+
+.ft-cta-2 a {
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  font-family: Verdana;
+  float: right;
+  margin-right: 20px;
+}
+
+.ft-cta-2 a:hover {
+  text-decoration: underline;
+}
+
+
+.dsc-text-inside-2 {
+  margin-top: 220px;
+  margin-left: 20px;
+  font-family: Verdana;
+  font-style: italic;
+  font-size: 12px;
+  color: #fff;
+}
+
+
+/* --Text Box Controls-- */
+
+
+/*
+.f-text-1{
+  grid-area: 'f-text-1';
+  text-align: center;
+}
+
+.f-text-2{
+  grid-area: 'f-text-2';
+  text-align: center;
+}
+
+.f-text-3{
+  grid-area: 'f-text-3';
+  text-align: center;
+}
+
+*/
+
+/* --Text Controls-- */
+
+
+/*
+.featured-text {
+  font-family: Georgia;
+  font-size: 18px;
+  color: #1b1b1b;
+}
+
+.dsc-text{
+  margin-top: 10px;
+  font-family: Verdana;
+  font-size: 14px;
+  color: #2a2929;
+}
+
+*/
+
+
+
+/* ---MISSION STATEMENT---  */
+
+
+.mission-container {
+  display: block;
+  margin: 0;
+}
+
+
+.mission-txt {
+  width: fit-content;
+  font-family: "Georgia";
+  font-size: 36px;
+  color: #1b1b1b;
+  margin: 50px auto 50px auto;
+  border-top: 1px solid #c8c3c3;
+  line-height: 2;
+}
+
+h5 {
+  font-family: "Verdana";
+  font-size: 14px;
+  color: #404040;
+  text-align: center;
+  margin-top: 40px;
+  font-style: italic;
+}
+
+
+/* ------------ FEATURED LIGHTS --------------*/
+
+.lamps-container{
+  display: grid;
+  margin: 0 auto 100px auto;
+  margin-top: 100px;
+  width: 70%;
+  grid-template-areas: "lamps-new-1 lamps-new-2";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px;
+  grid-gap: 30px;
+}
+
+.lamps-new-1{
+
+  background-image: url('./elements/lamp8.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #1b1b1b;
+}
+
+
+/* --- $$$ hover effects $$$$ ----*/
+
+.lamps-new-1:hover{
+  background-image: url('./elements/lamp8-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.lamps-new-1:hover .new-dsc{
+  visibility: hidden;
+}
+
+.lamps-new-1:hover .lamp-cta a{
+  color: #fff;
+}
+
+.lamps-new-1 .lamp-cta a:hover{
+  text-decoration: underline;
+}
+
+/* ----- $$$$$$ ----- */
+
+.lamps-new-2{
+
+  background-image: url('./elements/lamp5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* ---- $$$$ hover effects $$$$ ----- */
+
+}
+
+.lamps-new-2:hover{
+  background-image: url('./elements/lamp5-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.lamps-new-2:hover .new-dsc{
+  visibility: hidden;
+}
+
+.lamps-new-2:hover .lamp-cta a{
+  color: #fff;
+}
+
+.lamps-new-2 .lamp-cta a:hover{
+  text-decoration: underline;
+}
+
+/* ----- $$$$$ -----*/
+
+
+/* --- FEATURED TEXT control --- */
+
+.new-text {
+  font-size: 30px;
+  color: #fff;
+  font-family: "Georgia";
+  text-transform: lowercase;
+  margin: 20px;
+  text-shadow: 2px 2px 8px #111;
+}
+
+
+.new-dsc {
+  font-size: 18px;
+  font-family: "Verdana";
+  color: #1b1b1b;
+  margin: 10px 30px;
+  font-style: italic;
+}
+
+
+
+.lamp-cta a {
+  display: inline-block;
+  width: fit-content;
+  font-size: 18px;
+  color: #1b1b1b;
+  font-family: "Verdana";
+  margin-top: 350px;
+  margin-left: 350px;
+
+}
+
+
+/* -------------------- FOOTER ---------------------*/
+
+
+/* --- FOOTER text control ---*/
+
+
+footer {
+  display: block;
+  background-color: #474747;
+  width: 100%;
+  margin-top: 200px;
+  padding: 50px 0;
+}
+
+footer ul li a {
+  display: inline-block;
+  width: fit-content;
+  font-family: Verdana;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* ---- Footer links positioning Control ---*/
+
+.tele-number a {
+  list-style: none;
+  display: inline-block;
+  margin-left: 600px;
+}
+
+.footer-links-1{
+  list-style: none;
+  display: inline-block;
+  margin-left: 900px;
+}
+
+.footer-links-2{
+  list-style: none;
+  display: inline-block;
+  margin-left: 200px;
+}
+
+.footer-links-3{
+  list-style: none;
+  display: inline-block;
+  margin-left: 200px;
+}
